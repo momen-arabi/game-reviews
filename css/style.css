@@ -1,0 +1,98 @@
+/* MAIN STYLING */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Khand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --purple: #3a497b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Khand", sans-serif;
+}
+
+header {
+  background-image: url("../images/wraper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+}
+
+nav {
+  margin-top: -30px;
+}
+
+small {
+  font-size: 60%;
+}
+/********************************/
+
+/* CUSTOM CLASSES */
+.text-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.text-khand {
+  font-family: "Khand", sans-serif;
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.card {
+  transition: transform 0.4s;
+}
+
+.overlay {
+  transition: opacity 0.4s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card:hover .overlay {
+  opacity: 0;
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+.card-title,
+.badge {
+  line-height: 1 !important;
+}
+
+.badge {
+  font-size: 0.65rem;
+}
+/********************************/
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #212529;
+  border-radius: 10px;
+  background-color: #212529;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #212529;
+  background-color: var(--purple);
+}
+/********************************/
